@@ -11,7 +11,7 @@ public class Main implements IXposedHookLoadPackage {
     public void handleLoadPackage(final LoadPackageParam lpparam) throws Throwable {
         if (lpparam.packageName.equals("net.supercat.stone")) {
             XposedBridge.log("Loaded correct app!:" + lpparam.packageName);
-            System.load("data/local/tmp/libhook.so");
+            System.load("/data/local/tmp/libhook.so");
         }
     }
 }

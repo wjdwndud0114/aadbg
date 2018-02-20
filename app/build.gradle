@@ -22,7 +22,7 @@ repositories {
 }
 
 dependencies {
-    provided 'de.robv.android.xposed:api:82'
+    provided 'de.robv.android.xposed:api:53' //latest is 82
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:26.1.0'
     testImplementation 'junit:junit:4.12'
